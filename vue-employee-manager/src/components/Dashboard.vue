@@ -1,6 +1,14 @@
 <template>
   <div id="dashboard">
-  	<h3>Dashboard</h3>
+    <ul class="collection with-header">
+      <li class="collection-header">
+      	<h4>Employees</h4>
+      </li>
+      <li v-for="employee in employees" v-bind:key="employee.id" class="collection-item">
+      	<div class="chip">{{ employee.dept }}</div>
+      	{{ employee.employee_id }} : {{ employee.name }}
+      </li>
+    </ul>
 
   	<div class="fixed-action-btn">
   	  <router-link to="/new" class="btn-floating btn-large deep-purple">
