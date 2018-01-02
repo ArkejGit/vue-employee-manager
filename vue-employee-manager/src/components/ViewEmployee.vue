@@ -5,12 +5,12 @@
 </template>
 
 <script>
-	export default {
-		name: 'view-employee',
-		data () {
-			return {
-				
-			}
-		}
-	}
+export default {
+  name: 'view-employee',
+  data () {
+    return {
+
+    }
+  }
+}
 </script>
